@@ -1,4 +1,4 @@
-# Assesement for Candidates applying for the position of SE(ROR)
+# Assesement for Candidates
 
 Please follow the instructions below to complete the tasks and showcase your proficiency in Ruby on Rails. This assesement will be focussed on refactoring and code optimization techniques.
 
