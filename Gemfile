@@ -76,3 +76,6 @@ group :test do
 end
 gem 'devise'
 gem 'pagy'
+gem 'sidekiq'
+gem 'smarter_csv'
+gem 'activerecord-import'
