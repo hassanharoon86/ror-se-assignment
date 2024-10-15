@@ -1,12 +1,9 @@
-<div class="container">
-  <h1>Editing Employee</h1>
+<h1>Editing Employee</h1>
 
-  <%= form_tag employee_path(@employee.dig("id")), method: :put do %>
-    <%= render 'form' %>
-    
-    <div class="d-flex mt-3">
-      <%= submit_tag "Submit", class: 'btn btn-primary me-2' %>
-      <%= render 'back_link' %>
-    </div>
-  <% end %>
-</div>
+<%= form_tag employee_path(@employee.dig("id")), method: :put do %>
+  <%= render 'form' %>
+  <div class="d-flex mt-3">
+    <%= submit_tag "Submit", class: 'btn btn-primary me-2' %>
+    <%= render 'back_link' %>
+  </div>
+<% end %>

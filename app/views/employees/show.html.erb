@@ -1,26 +1,25 @@
-<div class="container">
-  <h1>Employee Details</h1>
-  <table class="table">
-    <tbody>
-      <tr>
-        <th>Name</th>
-        <td><%= @employee.dig("name") %></td>
-      </tr>
-      <tr>
-        <th>Position</th>
-        <td><%= @employee.dig("position") %></td>
-      </tr>
-      <tr>
-        <th>Salary</th>
-        <td><%= @employee.dig("salary") %></td>
-      </tr>
-      <tr>
-        <th>Date of Birth</th>
-        <td><%= @employee.dig("date_of_birth") %></td>
-      </tr>
-    </tbody>
-  </table>
+<h1>Employee Details</h1>
 
-  <%= link_to "Edit Employee", edit_employee_path(@employee.dig("id")), class: "btn btn-primary" %>
-  <%= render 'employees/back_link' %>
-</div>
+<table class="table">
+  <tbody>
+    <tr>
+      <th>Name</th>
+      <td><%= @employee.dig("name") %></td>
+    </tr>
+    <tr>
+      <th>Position</th>
+      <td><%= @employee.dig("position") %></td>
+    </tr>
+    <tr>
+      <th>Salary</th>
+      <td><%= @employee.dig("salary") %></td>
+    </tr>
+    <tr>
+      <th>Date of Birth</th>
+      <td><%= @employee.dig("date_of_birth") %></td>
+    </tr>
+  </tbody>
+</table>
+
+<%= link_to "Edit Employee", edit_employee_path(@employee.dig("id")), class: "btn btn-primary" %>
+<%= render 'employees/back_link' %>

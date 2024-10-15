@@ -1,15 +1,4 @@
 <%= form_with(model: blog) do |form| %>
-  <% if blog.errors.any? %>
-    <div class="alert alert-danger">
-      <h2><%= pluralize(blog.errors.count, "error") %> prevented this blog from being saved:</h2>
-      <ul>
-        <% blog.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
   <div class="mb-3">
     <%= form.label :title, class: 'form-label' %>
     <%= form.text_field :title, class: 'form-control', placeholder: 'Enter blog title', autocomplete: 'on' %>
